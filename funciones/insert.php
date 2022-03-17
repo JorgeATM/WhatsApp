@@ -11,7 +11,7 @@
     $sentencia ="INSERT INTO servidor VALUES(DEFAULT,'1111111','$numero','$mensaje','$fecha','pendiente')";
             
             if(mysqli_query($conexion,$sentencia)){
-                    header("Location: ../main/index.html");
+                    header("Location: ../main/index.php");
             }else{
                 echo "no";
             }
