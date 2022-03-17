@@ -1,5 +1,5 @@
 <?php
-    include("conexion.php");
+    include("../conexion/conexion.php");
 
     $numero=$_POST['txtNumero'];
     $mensaje=$_POST['txtMensaje'];
@@ -8,7 +8,7 @@
 
 
 
-    $sentencia ="INSERT INTO servidor VALUES(DEFAULT,'555555555','$numero','$mensaje','pendiente')";
+    $sentencia ="INSERT INTO servidor VALUES(DEFAULT,'1111111','$numero','$mensaje','$fecha','pendiente')";
             
             if(mysqli_query($conexion,$sentencia)){
                     header("Location: ../main/index.html");
