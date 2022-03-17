@@ -7,7 +7,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
+  color: aqua;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
