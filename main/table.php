@@ -10,8 +10,7 @@
     <tbody>
         <?php
         include("../conexion/conexion.php"); //importar la conexion
-        $sentencia = "SELECT em,re,texto,fecha,estado FROM servidor WHERE
-		  em = '1111111'";
+        $sentencia = "SELECT em,re,texto,fecha,estado FROM servidor ";
 
         $resultado = mysqli_query($conexion, $sentencia);
         while($ver = mysqli_fetch_assoc($resultado)){
