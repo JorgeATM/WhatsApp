@@ -17,7 +17,8 @@
 
 <form id="form" class="topBefore" method="post"  action="../funciones/insert.php">
 		
-		  <input id="name" type="text" placeholder="Receptor" name="txtNumero">
+		  <input id="nombre" type="text" placeholder="Nombre Receptor" name="txtNombreReceptor">
+          <input id="name" type="text" placeholder="Numero Receptor" name="txtNumero">
 		  <input id="email" type="text" placeholder="Mensaje" name="txtMensaje">
           <input id="receptor" type="text" placeholder="Emisor" name="txtEmisor">
           <input id="origen" type="text" placeholder="ES" name="txtEs">
