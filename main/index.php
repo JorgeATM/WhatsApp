@@ -20,7 +20,7 @@
 		  <input id="nombre" type="text" placeholder="Nombre Receptor" name="txtNombreReceptor">
           <input id="name" type="text" placeholder="Numero Receptor" name="txtNumero">
 		  <input id="email" type="text" placeholder="Mensaje" name="txtMensaje">
-          <input id="receptor" type="text" placeholder="Emisor" name="txtEmisor">
+          <input id="emisor" type="text" placeholder="Emisor" name="txtEmisor">
           <input id="origen" type="text" placeholder="ES" name="txtEs">
           <input id="status " type="text" placeholder="Estado" name="txtEstados">
 
