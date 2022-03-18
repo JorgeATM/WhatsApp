@@ -21,8 +21,8 @@
           <input id="name" type="text" placeholder="Numero Receptor" name="txtNumero">
 		  <input id="email" type="text" placeholder="Mensaje" name="txtMensaje">
           <input id="emisor" type="text" placeholder="Emisor" name="txtEmisor">
-          <input id="origen" type="text" placeholder="ES" name="txtEs">
-          <input id="status " type="text" placeholder="Estado" name="txtEstados">
+          <input id="es" type="text" placeholder="ES" name="txtEs">
+          <input id="estados" type="text" placeholder="Estados" name="txtEstados">
 
   <input id="submit" type="submit" value="Enviar">
   
