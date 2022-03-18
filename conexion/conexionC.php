@@ -1,8 +1,8 @@
 <?php
-    $servidor = "192.168.1.186";
+    $servidor = "localhost";
     $usuario = "root";
     $password = "";
-    $db = "cliente";
+    $db = "";
 
     $conexion = mysqli_connect(
         $servidor,
