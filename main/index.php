@@ -19,6 +19,10 @@
 		
 		  <input id="name" type="text" placeholder="Receptor" name="txtNumero">
 		  <input id="email" type="text" placeholder="Mensaje" name="txtMensaje">
+          <input id="receptor" type="text" placeholder="Emisor" name="txtEmisor">
+          <input id="origen" type="text" placeholder="ES" name="txtEs">
+          <input id="status " type="text" placeholder="Estado" name="txtEstados">
+
   <input id="submit" type="submit" value="Enviar">
   
   <div class="formgroup" id="message-form">        
