@@ -7,7 +7,8 @@
     $mensaje=$_POST['txtMensaje'];
 
     $nombre=$_POST['txtNombreReceptor'];
-    $tipo=$_POST['txtES'];
+    //$tipo=$_POST['txtES'];
+    $enSal = $_POST["txtES"];
     $estado=$_POST['txtEstados'];
 
     date_default_timezone_set('America/Mexico_City');
@@ -18,26 +19,22 @@
 
     $sentencia ="INSERT INTO servidor VALUES(DEFAULT,'$emisor','$numero','$mensaje','$fecha','$estado')";
             
-            if(mysqli_query($conexion,$sentencia)){
+            if(mysqli_query($conexion,$sentencia)){//
 
-                $sentenciaC= "INSERT INTO contacto VALUES('$receptor','$nombre')";
-                if(mysqli_query($conexionC,$sentenciaC)){
+                //$sentenciaC= "INSERT INTO contacto VALUES('$receptor','$nombre')";
+                //if(mysqli_query($conexionC,$sentenciaC)){
 
-                        $sentenciaE= "INSERT INTO emisor VALUES('$emisor','$informacion')";
-                if(mysqli_query($conexionC,$sentenciaE)){
-                        $sentenciaM= "INSERT INTO mensaje VALUES(DEFAULT,'$numero','$mensaje','$fecha','$tipo','$estado')";
-                if(mysqli_query($conexionC,$sentenciaM)){
-                        header("Location: ../main/index.php");    
-                }
-                }
-                }
-
-                    
+                  //      $sentenciaE= "INSERT INTO emisor VALUES('$emisor','$informacion')";
+                //if(mysqli_query($conexionC,$sentenciaE)){
+                
+                //}
+                //}
+                  
             }else{
-                echo "no";
+                echo "no servidor";
             }
 
     
-        mysqli_close($conexionC);
+        
     
     mysqli_close($conexion);
