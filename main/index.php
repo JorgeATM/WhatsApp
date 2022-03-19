@@ -24,11 +24,11 @@ function enviarEmi(){
         document.forms.formsE.submit();
     }
 
-    //function enviarS(){
-      //  document.forms.formsE.action = "../funciones/insert.php";
-        //document.formsE.target = "_top";
-        //document.forms.formsE.submit();
-    //}
+    function enviarS(){
+      document.forms.formsE.action = "../funciones/insert.php";
+        document.formsE.target = "_top";
+        document.forms.formsE.submit();
+    }
 </script>
 
 <form id="form" name="formsE" class="topBefore" method="post" action="../funciones/insert.php">
@@ -40,7 +40,7 @@ function enviarEmi(){
           <input id="es" type="text" placeholder="ES" name="txtES">
           <input id="estados" type="text" placeholder="Estados" name="txtEstados">
 
-  <input id="submit" type="submit" value="Enviar" onclick="enviarEmi();">
+  <input id="submit" type="submit" >
   
   <div class="formgroup" id="message-form">        
     </div>        
