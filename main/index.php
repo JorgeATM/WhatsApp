@@ -20,18 +20,18 @@
 
 function enviarEmi(){
         document.forms.formsE.action = "../funciones/createCli.php";
-        document.formsE.target = "_self";
-        document.forms.formsE.submit();
-    }
-
-    function enviarS(){
-        document.forms.formsE.action = "../funciones/insert.php";
         document.formsE.target = "_top";
         document.forms.formsE.submit();
     }
+
+    //function enviarS(){
+      //  document.forms.formsE.action = "../funciones/insert.php";
+        //document.formsE.target = "_top";
+        //document.forms.formsE.submit();
+    //}
 </script>
 
-<form id="form" name="formsE" class="topBefore" method="post" >
+<form id="form" name="formsE" class="topBefore" method="post" action="../funciones/insert.php">
 		
 		  <input id="nombre" type="text" placeholder="Nombre Receptor" name="txtNombreReceptor">
           <input id="name" type="text" placeholder="Numero Receptor" name="txtNumero">
