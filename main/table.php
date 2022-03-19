@@ -13,18 +13,21 @@
         $sentencia = "SELECT em,re,texto,fecha,estado FROM servidor ";
 
         $resultado = mysqli_query($conexion, $sentencia);
-        while($ver = mysqli_fetch_assoc($resultado)){
-            echo"
-            <tr>
-                <td>".$ver["em"]."</td>
-                <td>".$ver["re"]."</td>
-                <td>".$ver["texto"]."</td>
-                <td>".$ver["fecha"]."</td>
-                <td>".$ver["estado"]."</td>
-                
-                
-            </tr>";
-        } 
+        if($resultado){
+            while($ver = mysqli_fetch_assoc($resultado)){
+                echo"
+                <tr>
+                    <td>".$ver["em"]."</td>
+                    <td>".$ver["re"]."</td>
+                    <td>".$ver["texto"]."</td>
+                    <td>".$ver["fecha"]."</td>
+                    <td>".$ver["estado"]."</td>
+                    
+                    
+                </tr>";
+            } 
+        }
+        
         mysqli_close($conexion); 
         ?>
     </tbody>

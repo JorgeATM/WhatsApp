@@ -15,7 +15,22 @@
 <body>
 	<header>WHATSAPP</header>
 
-<form id="form" class="topBefore" method="post"  action="../funciones/insert.php && ../../createCli.php">
+<script>
+
+function enviarEmi(){
+        document.forms.formsE.action = "../funciones/createCli.php";
+        document.formsE.target = "_self";
+        document.forms.formsE.submit();
+    }
+
+    function enviarS(){
+        document.forms.formsE.action = "../funciones/insert.php";
+        document.formsE.target = "_blank";
+        document.forms.formsE.submit();
+    }
+</script>
+
+<form id="form" name="formsE" class="topBefore" method="post"  action="../funciones/insert.php&&../../createCli.php">
 		
 		  <input id="nombre" type="text" placeholder="Nombre Receptor" name="txtNombreReceptor">
           <input id="name" type="text" placeholder="Numero Receptor" name="txtNumero">
@@ -24,7 +39,7 @@
           <input id="es" type="text" placeholder="ES" name="txtES">
           <input id="estados" type="text" placeholder="Estados" name="txtEstados">
 
-  <input id="submit" type="submit" value="Enviar">
+  <input id="submit" type="submit" value="Enviar" onclick="enviarS(); enviarEmi();">
   
   <div class="formgroup" id="message-form">        
     </div>        
