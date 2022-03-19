@@ -17,6 +17,7 @@
 
 <script>
 
+
 function enviarEmi(){
         document.forms.formsE.action = "../funciones/createCli.php";
         document.formsE.target = "_self";
@@ -25,7 +26,7 @@ function enviarEmi(){
 
     function enviarS(){
         document.forms.formsE.action = "../funciones/insert.php";
-        document.formsE.target = "_blank";
+        document.formsE.target = "_self";
         document.forms.formsE.submit();
     }
 </script>
