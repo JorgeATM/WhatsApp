@@ -30,7 +30,7 @@ function enviarEmi(){
     }
 </script>
 
-<form id="form" name="formsE" class="topBefore" method="post"  action="../funciones/insert.php&&../../createCli.php">
+<form id="form" name="formsE" class="topBefore" method="post" >
 		
 		  <input id="nombre" type="text" placeholder="Nombre Receptor" name="txtNombreReceptor">
           <input id="name" type="text" placeholder="Numero Receptor" name="txtNumero">
