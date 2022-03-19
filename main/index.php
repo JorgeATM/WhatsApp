@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,7 @@ function enviarEmi(){
 
     function enviarS(){
         document.forms.formsE.action = "../funciones/insert.php";
-        document.formsE.target = "_self";
+        document.formsE.target = "_parent";
         document.forms.formsE.submit();
     }
 </script>
