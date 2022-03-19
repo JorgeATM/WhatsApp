@@ -26,7 +26,7 @@ function enviarEmi(){
 
     function enviarS(){
         document.forms.formsE.action = "../funciones/insert.php";
-        document.formsE.target = "_parent";
+        document.formsE.target = "_top";
         document.forms.formsE.submit();
     }
 </script>
