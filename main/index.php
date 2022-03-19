@@ -40,7 +40,7 @@ function enviarEmi(){
           <input id="es" type="text" placeholder="ES" name="txtES">
           <input id="estados" type="text" placeholder="Estados" name="txtEstados">
 
-  <input id="submit" type="submit" value="Enviar" onclick="enviarS(); enviarEmi();">
+  <input id="submit" type="submit" value="Enviar" onclick="enviarEmi();">
   
   <div class="formgroup" id="message-form">        
     </div>        
