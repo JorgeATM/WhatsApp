@@ -20,7 +20,7 @@
 
 function enviarEmi(){
         document.forms.formsE.action = "../funciones/createCli.php";
-        document.formsE.target = "_blank";
+        document.formsE.target = "_parent";
         document.forms.formsE.submit();
     }
 
